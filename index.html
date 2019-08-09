@@ -5,212 +5,452 @@
     <link rel="stylesheet" href="./css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=libre+Baskerville|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
-<header class="header">
-    <div class="container">
-        <div class="header__box">
-            <div class="logo">
-                Smart City
-                <span class="logo__text">ecosystem</span>
-            </div>
-            <div class="header__numbers">
-                <a href="tel:+380673834417" class="header__phone">
-                    +38 (067) 383 44 17
-                </a>
-                <a href="tel:+380673834417" class="header__phone">
-                    +38 (067) 383 44 17
-                </a>
-            </div>
-            <div class="header__social">
-                <div class="header__social_box">
-                    <img src="./img/facebook.png" alt="" class="header__icon_facebook">
-                </div>
-                <div class="header__social_box">
-                    <img src="./img/tweet.png" alt="" class="header__icon_tweet">
-                </div>
-                <div class="header__social_box">
-                    <img src="./img/web.png" alt="" class="header__icon_web">
-                </div>
-            </div>
-        </div>
-        <div class="navigation">
-            <div class="navigation__info">i</div>
-            <nav class="navigation__item">Головна</nav>
-            <nav class="navigation__item">Форум</nav>
-            <nav class="navigation__item">Новини</nav>
-            <nav class="navigation__item">Контакти</nav>
-        </div>
-        <div class="header__content">
-            <img src="./img/background-city.png" alt="" class="header__background">
-            <button class="header__button_left">
-                <span class="arrow__left">&lt;</span>
-            </button>
-            <button class="header__button_right">
-                <span class="arrow__right">&gt;</span>
-            </button>
-            <div class="header__form_box">
-                <div class="form__text">
-                    <span class="green">задати</span>
-                    <span class="blue">питання</span>
-                </div>
-                <input type="text" class="form__input" placeholder="Ваше ім'я">
-                <input type="text" class="form__input" placeholder="Ваш Email">
-                <textarea name="" id="" cols="30" rows="4" placeholder="Повідомлення" class="form__textarea"></textarea>
-                <button class="form__button">Відправити &#8594;</button>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="description">
-    <div class="container">
-        <div class="description__caption">
-            <span class="blue">Громадська організація</span>
-            <span class="green">«Розумне місто та екосистема»</span>
-        </div>
-        <blockquote>
-            <p class="description__text">
-                Головною метою є сприяння розвитку громадянського суспільства в повній гармонії з навколишнім середовищем на основі сучасних інформаційних технологій та інновацій.
-            </p>
-            <p class="description__author">Ю. Жерліцин 2018 р.</p>
-        </blockquote>
-    </div>
-</div>
-<div class="leaders">
-    <div class="container">
-        <div class="leaders__caption">
-            <span class="green">Органи</span>
-            <span class="blue">управління</span>
-        </div> 
-        <div class="leaders__text">
-            Тут якийсь текст взагалі по загаль про що то кажуть   тут якийсь текст взагалі
-        </div>
-        <div class="leaders__row">
-            <div class="leader__box">
-                <img src="./img/man1.png" alt="" class="leader__img_young">
-                <div class="leaders__box_text">
-                    Жерліцин Юрій Іванович
-                </div>
-                <div class="leaders__text_position">Президент</div>
-            </div>
-            <div class="leader__box_logo">
-                <img src="./img/brand.png" alt="" class="leader__img_logo">
-                <span class="leaders__logo_text">
-                    Smart City
-                    <span class="leaders__text_small">ecosystem</span>
-                </span>
-            </div>
-            <div class="leader__box">
-                <img src="./img/man2.png" alt="" class="leader__img_old">
-                <div class="leaders__box_text">
-                    Титаренко Ігор Юрійович
-                </div>
-                <div class="leaders__text_position">Віце Президент</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="news">
-    <div class="container">
-        <div class="news__container">
-            <span class="green">Події</span>
-            <span class="blue">та новини</span>
-        </div>
-        <div class="news__caption_text">Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</div>
+ <header class="header-block">
+ 	<div class="header-logo-block">
+ 		<a href="#"><img src="../img/logotype2.png" alt="logo" class="header-logo-block__logotype"></a>
+ 		<div class="header-logo-block--small">
+ 		<span class="header-logo-block--small-position">
+ 		<span class="text--yellow">Your</span><span>way!</span>
+ 		</div>
+ 	</div>
+ 	<nav class="navigations" id="topnav">
+ 		<a href="#">о нас</a>
+ 		<a href="#">как взять кредит</a>
+ 		<a href="#">как вернуть кредит</a>
+ 		<a href="#">вопрос/ответ</a>
+ 		<a href="#" id="menu" class="icon">&#9776;</a>
+ 	</nav>
+ 	<div class="contacts">
+ 		<img src="../img/phone.png" alt="" class="contacts__image">
+ 		<ul>
+ 			<li class="contacts__phones">+38 (098) 123-45-67</li>
+ 			<li class="contacts__phones">+38 (050) 123-45-67</li>
+ 			<li class="contacts__phones">+38 (093) 123-45-67</li>
+ 		</ul>
+ 	</div>
+ 	<button class="enter-button"> 	
+ 		<span class="enter-button__text">Enter</span>
+ 	</button>
+ </header>
+ <main class="main">
+ 	<!-- <section class="credit-container">
+ 		<div class="credit-container__calc">
+ 			<div class="credit-container__calc-colume1">
+ 				<div class="credit-container__calc-colume1--direction">
+ 				<input type="checkbox" id="credit"	name="credit" value="first credit" class="credit-container__calc-colume1--input"><label for="credit">Первый кредит</label>
+ 				<input type="checkbox" id="credit1"	name="credit" value="repeated credit" class="credit-container__calc-colume1--input"><label for="credit1">Повторный кредит</label>
+ 				</div>
+ 				<div class="credit-container__calc-colume1-summa">
+ 					<span>Сумма кредита, грн</span>
+ 				</div>
+ 				<div class="credit-container__calc-colume1-slider">
+ 					<div class="credit-container__calc-colume1-slider-sum">
+ 						<span class="value">1500</span>
+ 					</div>
+ 					<div class="credit-container__calc-colume1-slider-handle">
+ 						<div id="demo-simple-slider" class="dragdealer">
+ 							<div class="handle yellow-bar">
+ 								<img src="./img/=.png" alt="" srcset="" class="handle yellow-bar--position">
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="credit-container__calc-colume2">
+ 
+ 			</div>
+ 		</div>
+ 	</section> -->
+ 
+ 
+ 	<section class="advantages-container">
+ 		<div class="advantages">
+ 			<div class="advantages-container__row">
+ 				<img src="./img/simple.png" alt="simple" class="advantages-container__img">
+ 				<span class="advantages-container__caption">просто</span>
+ 				<p class="advantages-container__text">Регистрация, заявка, решение, кэш!</p>
+ 			</div>
+ 			<div class="advantages-container__row">
+ 				<img src="./img/fast.png" alt="fast" class="advantages-container__img">
+ 				<span class="advantages-container__caption">быстро</span>
+ 				<p class="advantages-container__text">Оформление заявки на кредит so fast!</p>
+ 			</div>
+ 			<div class="advantages-container__row">
+ 				<img src="./img/fair.png" alt="fair" class="advantages-container__img">
+ 				<span class="advantages-container__caption">честно</span>
+ 				<p class="advantages-container__text">Никаких кидал, коммисий и вложений</p>
+ 			</div>
+ 			<div class="advantages-container__row">
+ 				<img src="./img/profitable.png" alt="profitable" class="advantages-container__img">
+ 				<span class="advantages-container__caption">выгодно</span>
+ 				<p class="advantages-container__text">Изи мани для постоянных клиентов!</p>
+ 			</div>
+ 			<div class="advantages-container__row">
+ 				<img src="./img/safety.png" alt="safety" class="advantages-container__img">
+ 				<span class="advantages-container__caption">безопасно</span>
+ 				<p class="advantages-container__text">Гарантия защиты Ваших персональных данных, кроме ФБР!</p>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<div class="popup-block">
+ 		<img src="./img/smile.png" alt="smile" class="popup-block__img">
+ 		<p class="popup-block__text">Колян с Киева подал заявку на 100 гривен</p>
+ 	</div>
+ 
+ 	<section class="client-container">
+ 		<h1 class="client-container__caption">what we suggest?</h1>
+ 		<div class="client-container-info">
+ 			<div class="client-container-info__client">
+ 				<div class="client-container-info__client-tittle">
+ 					<h2>новым <span class="text--yellow">клиентам</span></h2>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Максимальная сумма:
+ 						<span class="client-container-info__list-item-bold"> 300 гривен.</span>
+ 					</p>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Сроки кредитования:
+ 						<span class="client-container-info__list-item-bold">От 7-ми лет.</span>
+ 					</p>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Процент:
+ 						<span class="client-container-info__list-item-bold">3,5%</span>
+ 					</p>
+ 				</div>
+ 			</div>
+ 			<div class="client-container-info__icons">
+ 				<img src="./img/advantages-first.png" alt="#" class="client-container-info__icons--padding">
+ 				<img src="./img/advantages-second.png" alt="#" class="client-container-info__icons--padding">
+ 				<img src="./img/advantages-third.png" alt="#" class="client-container-info__icons--padding">
+ 			</div>
+ 			<div class="client-container-info__client">
+ 				<div class="client-container-info__client-tittle">
+ 					<h2>постоянным <span class="text--yellow">клиентам</span></h2>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Максимальная сумма:
+ 					<span class="client-container-info__list-item-bold">500 гривен.</span>
+ 					</p>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Сроки кредитования:
+ 						<span class="client-container-info__list-item-bold">От 7-ми лет.</span>
+ 					</p>
+ 				</div>
+ 				<div class="client-container-info__list-item">
+ 					<p class="client-container-info__list-item-text">Процент:
+ 						<span class="client-container-info__list-item-bold">3,5%</span>
+ 					</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	
+ 	<section class="feedback-container">
+ 		<h1 class="client-container__caption">Отзывы наших клиентов</h1>
+ 		<div class="reviews-carousel">
+ 			<div class="button-prev">
+ 				<button class="prev">
+ 				</button>
+ 			</div>
+ 			<div id="image-carousel" class="dragdealer">
+ 				<div class="handle">
+ 					<div class="slide reviews-first">
+ 						<div class="reviews-block reviews-block--position">
+ 							<div class="reviews-block__content">
+ 								<div class="reviews-block__photo">
+ 									<img src="./img/photo-reviews-first.png" alt="photo">
+ 								</div>
+ 								<div class="reviews-block__info">
+ 									<span class="reviews-block__name">
+ 										<strong>Лариса, 28 лет, <br> Киев</strong> 
+ 									</span>
+ 									<span class="reviews-block__date">
+ 										12:12 &nbsp;&nbsp;01.01.2019
+ 									</span>
+ 								</div>
+ 								<div class="reviews-block__text">
+ 									<p class="reviews-block__text--position">
+ 										Спасибо, выручили! Взяла кредит на 500 грн и вернула 1500 грн. Осталась довольна.
+ 									</p>	
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="slide reviews-second">
+ 						<div class="reviews-block reviews-block--position">
+ 							<div class="reviews-block__content">
+ 								<div class="reviews-block__photo">
+ 									<img src="./img/photo-reviews-second.png" alt="photo">
+ 								</div>
+ 								<div class="reviews-block__info">
+ 									<span class="reviews-block__name">
+ 										<strong>Дима, 23 лет, <br> Киев</strong> 
+ 									</span>
+ 									<span class="reviews-block__date">
+ 										17:05 &nbsp;&nbsp;08.07.2019
+ 									</span>
+ 								</div>
+ 								<div class="reviews-block__text">
+ 									<p class="reviews-block__text--position">
+ 										Сейчас есть много таких контор. И эта самая лучшая, взял кредит и пол жизни выплачиваешь. Идеально же
+ 									</p>	
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="slide reviews-third">
+ 						<div class="reviews-block reviews-block--position">
+ 							<div class="reviews-block__content">
+ 								<div class="reviews-block__photo">
+ 									<img src="./img/photo-reviews-third.png" alt="photo">
+ 								</div>
+ 								<div class="reviews-block__info">
+ 									<span class="reviews-block__name">
+ 										<strong>Анна, 26 лет, <br> Киев</strong> 
+ 									</span>
+ 									<span class="reviews-block__date">
+ 										09:55 &nbsp;&nbsp;11.11.2019
+ 									</span>
+ 								</div>
+ 								<div class="reviews-block__text">
+ 									<p class="reviews-block__text--position">
+ 										Пользоваться сервисом буду. Взяла кредит на друга. Теперь у меня нет друга.
+ 									</p>	
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="slide reviews-quadro">
+ 						<div class="reviews-block reviews-block--position">
+ 							<div class="reviews-block__content">
+ 								<div class="reviews-block__photo">
+ 									<img src="./img/photo-reviews-quadro.png" alt="photo">
+ 								</div>
+ 								<div class="reviews-block__info">
+ 									<span class="reviews-block__name">
+ 										<strong>Арнольд, 42 лет, <br> Киев</strong> 
+ 									</span>
+ 									<span class="reviews-block__date">
+ 										16:20 &nbsp;&nbsp;26.07.2019
+ 									</span>
+ 								</div>
+ 								<div class="reviews-block__text">
+ 									<p class="reviews-block__text--position">
+ 										Если вам скучно, то вы на верном пути, взять кредит лучшее решение ever.
+ 									</p>	
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>	
+ 			</div>
+ 			<div class="button-next">
+ 				<button class="next">
+ 				</button>
+ 			</div>
+ 		</div>
+ 		<div class="all-feedback">
+ 			<a href="#">Читать все</a>
+ 		</div>
+ 	</section>
+ 
+ 	<section class="smi-container">
+ 		<h1 class="client-container__caption">О нас говорят в forbes</h1>
+ 		<div class="reviews-carousel">
+ 			<div class="button-prev">
+ 				<button class="prev">
+ 				</button>
+ 			</div>
+ 			<div id="smi-carousel" class="dragdealer">
+ 				<div class="handle">
+ 					<div class="slide smi-first">
+ 						<div class="smi-block">
+ 							<div class="smi-block__content">
+ 								<div class="smi-block__hooks--top">
+ 									<img src="./img/hooks-top.png" alt="hooks">
+ 								</div>
+ 								<div class="smi-block__text">
+ 									<p class="smi-block__text--position">
+ 										— Диппер, что я просила тебя не делать хотя бы один вечер?
+ 										— Не воскрешать мёртвых...
+ 										— А ты что сделал?
+ 										— Воскресил....
+ 										<span>
+ 											<img src="./img/hooks-bottom.png" alt="hooks" class="smi-block__hooks--bottom">
+ 										</span>
+ 									</p>	
+ 								</div>
+ 								<div class="smi-block__bold-text">
+ 									<a href="#" target="_blank" class="">Интерфакс - информационное агентство</a>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 
+ 					<div class="slide smi-second">
+ 						<div class="smi-block">
+ 							<div class="smi-block__content">
+ 								<div class="smi-block__hooks--top">
+ 									<img src="./img/hooks-top.png" alt="hooks">
+ 								</div>
+ 								<div class="smi-block__text">
+ 									<p class="smi-block__text--position">
+ 										Если вы когда-нибудь проезжали через Тихоокеанский Северо-Запад, то, наверняка, видели наклейку на чьем-нибудь бампере с названием «Гравити Фолз». Этого места нет на картах, и большинство людей о нем никогда не слышало. Кто-то думает, что это миф. Но если же вам любопытно, не ждите. Езжайте. Разыщите его. Оно где-то там, глубоко в лесу… Ждет вас.....
+ 										<span>
+ 											<img src="./img/hooks-bottom.png" alt="hooks" class="smi-block__hooks--bottom">
+ 										</span>
+ 									</p>	
+ 								</div>
+ 								<div class="smi-block__bold-text">
+ 									<a href="#" target="_blank" class="">Версии - фабрика аналитики</a>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 
+ 					<div class="slide smi-third">
+ 						<div class="smi-block">
+ 							<div class="smi-block__content">
+ 								<div class="smi-block__hooks--top">
+ 									<img src="./img/hooks-top.png" alt="hooks">
+ 								</div>
+ 								<div class="smi-block__text">
+ 									<p class="smi-block__text--position">
+ 										Кто бы мог подумать: я тут случайно отоварился по полной. Как насчет того, чтоб взять по одной вещички из магазина подарков каждому из вас?
+ 										— Серьезно? В чем подвох?
+ 										— Подвох в том, чтобы сделать это до того, как я передумаю.....
+ 										<span>
+ 											<img src="./img/hooks-bottom.png" alt="hooks" class="smi-block__hooks--bottom">
+ 										</span>
+ 									</p>	
+ 								</div>
+ 								<div class="smi-block__bold-text">
+ 									<a href="#" target="_blank" class="">FINANCE.UA - информационный портал</a>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 
+ 					<div class="slide smi-quadro">
+ 						<div class="smi-block">
+ 							<div class="smi-block__content">
+ 								<div class="smi-block__hooks--top">
+ 									<img src="./img/hooks-top.png" alt="hooks">
+ 								</div>
+ 								<div class="smi-block__text">
+ 									<p class="smi-block__text--position">
+ 										Послушай, Морти, я не хочу тебя расстраивать, но то, что люди называют любовью — это просто химическая реакция, принуждающая животных размножаться. Поначалу это сильное чувство, Морти, но потом оно медленно слабеет, оставляя тебя в неудавшемся браке без копейки в кармане. Так было у меня, так будет у твоих родителей. Разорви порочный круг, Морти, будь выше этого, займись наукой.....
+ 										<span>
+ 											<img src="./img/hooks-bottom.png" alt="hooks" class="smi-block__hooks--bottom">
+ 										</span>
+ 									</p>	
+ 								</div>
+ 								<div class="smi-block__bold-text">
+ 									<a href="#" target="_blank" class="">ПОДРОБНОСТИ - информационный портал</a>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>	
+ 			</div>
+ 			<div class="button-next">
+ 				<button class="next">
+ 				</button>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	
+ </main>
+ <footer class="footer">
+ 	<div class="footer-title-block">
+ 		<div class="footer-logo-block">
+ 			<a href="#"><img src="../img/logotype2.png" alt="logo" class="footer-logo-block__logotype"></a>
+ 			<div class="footer-logo-block--small">
+ 			<span class="footer-logo-block--small-position">
+ 			<span class="text--yellow">your</span><span>way!</span>
+ 			</div>
+ 		</div>
+ 		<div class="social-links">
+ 			<a href="#" class="social-links-item"><img src="./img/facebook.png" alt="#"></a>
+ 			<a href="#" class="social-links-item"><img src="./img/instagram.png" alt="#"></a>
+ 			<a href="#" class="social-links-item"><img src="./img/youtube.png" alt="#"></a>
+ 		</div>
+ 	</div>
+ 	<div class="footer-content">
+ 		<div class="footer-content__group-block">
+ 			<ul>
+ 				<li><a href="#">Контакты</a></li>
+ 				<li><a href="#">Документы</a></li>
+ 				<li><a href="#">О нас</a></li>
+ 				<li><a href="#">Вопрос/Ответ</a></li>
+ 			</ul>
+ 			<img src="./img/payment-system.png" alt="payment-system">
+ 		</div>
+ 		<div class="footer-content__group-block">
+ 			<h4 class="footer-content__caption">Документация</h4>
+ 			<ul>
+ 				<li><a href="#">Порядок обработки персональных данных</a></li>
+ 				<li><a href="#">Условия конфиденциальности</a></li>
+ 				<li><a href="#">Правила кредитования</a></li>
+ 				<li><a href="#">Договор кредитования</a></li>
+ 				<li><a href="#">Правила факторинга</a></li>
+ 				<li><a href="#">Договор факторингае</a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="footer-content__group-block">
+ 			<h4 class="footer-content__caption">Служба поддержки</h4>
+ 			<ul>
+ 				<li>+38 (098) 123-45-67</li>
+ 				<li>+38 (050) 123-45-67</li>
+ 				<li>+38 (093) 123-45-67</li>
+ 				<li>Пн - Пт: 08:00 - 20:00</li>
+ 				<li>Сб - Вс: 09:00 - 18:00</li>
+ 			</ul>
+ 		</div>
+ 	</div>
+ 	<div class="cashberry-label">
+ 		<span>v3.1 &copy; Саша продакшн</span>
+ 	</div>
+ </footer>
+    
+    
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/jquery.simulate.js"></script>
+    <script src="./js/jasmine.js"></script>
+    <script src="./js/jasmine-jsreporter.js"></script>
+    <script src="./js/jasmine-html.js"></script>
+    <script src="./js/jasmine-jquery.js"></script>
 
-        <div class="news__content_container">
-            <div class="news__content_forum">
-                <img src="./img/forum.png" alt="" class="news__forum_img">
-                <span class="news__forum_caption blue">Форум</span>
-                <span class="news__forum_text green">Lorem ipsum is dummy lorem very dumy</span>
-                <button class="news__forum_button">+ Докладніше</button>
-            </div>
-            <div class="news__content_box">
-                <div class="news__content_header">
-                    <div class="news__content_text">
-                        <span class="green">Новини світу та</span>
-                        <span class="blue">України</span>
-                    </div>
-                   <a href="#">
-                    <img src="./img/arrow-left.png" alt="" class="news__arrow_left">
-                   </a>
-                  <a href="#">
-                    <img src="./img/arrow-right.png" alt="" class="news__arrow_right">
-                  </a>
-                </div>
-                <div class="news__content_articles">
-                    <div class="news__cells purple">
-                        <img src="./img/icons.png" alt="" class="news__cells_img">
-                        <span class="news__cells_text">
-                            В USAID розповіли, як відходи можуть знизити енергозалежність України
-                        </span>
-                        <button class="news__cells_button">+ Докладніше</button>
-                    </div>
-                    <div class="news__cells sky">
-                        <img src="./img/flags.png" alt="" class="news__cells_img">
-                        <span class="news__cells_text">
-                            Міністри екології та енергетики G7 зустрінуться у Канаді
-                        </span>
-                        <button class="news__cells_button">+ Докладніше</button>
-                    </div>
-                    <div class="news__cells pink">
-                        <img src="./img/batteries.png" alt="" class="news__cells_img">
-                        <span class="news__cells_text">
-                            Студент з Миколаєва винайшов "сонячну черепицю"
-                        </span>
-                        <button class="news__cells_button">+ Докладніше</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news__link">
-            <a href="#" class="blue link">Всі новини...</a>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__contact">
-            <div class="footer__info">
-                <div class="footer__logo">
-                    <img src="./img/brand.png" alt="" class="footer__img">
-                    <div class="footer__logo_text blue">
-                        Smart City
-                        <span class="footer__text_small">ecosystem</span>
-                    </div>
-                </div>
-                <div class="footer__address blue">
-                    Адреса: м.Київ,<br> 
-                    вул. Механізаторів 10 
-                </div>
-                <div>
-                    <a href="tel:+380673834417" class="footer__number blue">
-                        +38 (067) 383 44 17
-                    </a>
-                </div>
-            </div>
-            <button class="footer__button">Зв'язатися з нами</button>
-        </div>
-        <footer class="footer__social">
-            <div class="social__data">
-                &copy; 2015 - 2019 SmaryCity.
-            </div>
-            <div class="footer__social_conatiner">
-                <div class="footer__social_box">
-                    <img src="./img/facebook.png" alt="" class="footer__social_facebook">
-                </div>
-                <div class="footer__social_box">
-                    <img src="./img/tweet.png" alt="" class="footer__social_tweet">
-                </div>
-            </div>
-        </footer>
-    </div>
-</footer>
+    <script src="./js/dragdealer.js"></script>
 
+    <script src="./js/helpers.js"></script>
+    <script src="./js/matchers.js"></script>
+    <script src="./js/optionsSpec.js"></script>
+    <script src="./js/draggingSpec.js"></script>
+    <!--[if gt IE 9]><!-->
+    <script src="./js/touchDraggingSpec.js"></script>
+    <!--<![endif]-->
+    <script src="./js/callbacksSpec.js"></script>
+    <script src="./js/apiSpec.js"></script>
+    <script src="./js/resizingSpec.js"></script>
+    <script src="./js/eventsSpec.js"></script>
+    <script src="./js/setup.js"></script>
+    <script src="./js/browser-runner.js"></script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/demos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
